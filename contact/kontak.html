@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunset Cafe</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flex flex-col min-h-[100dvh]">
+        <header class="px-4 lg:px-6 h-14 flex items-center">
+            <a class="flex items-center justify-center" href="#">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="h-6 w-6"
+                >
+                    <path d="M10 2v2"></path>
+                    <path d="M14 2v2"></path>
+                    <path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 1 0 0 0 0 8h-1"></path>
+                    <path d="M6 2v2"></path>
+                </svg>
+                <span class="sr-only">Sunset Cafe</span>
+            </a>
+            <nav class="ml-auto flex gap-4 sm:gap-6">
+                <a class="text-sm font-medium hover:underline underline-offset-4" href="../index.html">Beranda</a>
+                <a class="text-sm font-medium hover:underline underline-offset-4" href="../Tentang/tentang.html">Tentang</a>
+                <a class="text-sm font-medium hover:underline underline-offset-4" href="../Menu/menu.html">Menu</a>
+                <a class="text-sm font-medium hover:underline underline-offset-4 underline" href="#">Kontak</a>
+            </nav>
+        </header>
+        <main class="flex-1">
+            <section class="w-full pt-12 md:pt-24 lg:pt-32">
+                <div class="container space-y-10 xl:space-y-16">
+                    <div class="grid gap-4 px-10 md:grid-cols-2 md:gap-16">
+                        <div>
+                            <h1 class="lg:leading-tighter text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-[3.4rem] 2xl:text-[3.75rem]">Hubungi Kami</h1>
+                        </div>
+                        <div class="flex flex-col items-start space-y-4">
+                            <p class="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
+                                Kami senang mendengar dari Anda! Apakah Anda memiliki pertanyaan, komentar, atau hanya ingin menyapa, jangan ragu untuk menghubungi kami menggunakan informasi kontak di bawah ini.
+                            </p>
+                            <div class="space-y-2">
+                                <div>
+                                    <h3 class="font-semibold">Alamat</h3>
+                                    <p>123 Jalan Utama, Kota Contoh</p>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold">Telepon</h3>
+                                    <p>(123) 456-7890</p>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold">Email</h3>
+                                    <p>info@sunsetcafe.com</p>
+                                </div>
+                            </div>
+                            <div class="w-full max-w-md">
+                                <form class="space-y-4">
+                                    <div>
+                                        <label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" for="name">Nama</label>
+                                        <input class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50" id="name" placeholder="Masukkan nama Anda" />
+                                    </div>
+                                    <div>
+                                        <label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" for="email">Email</label>
+                                        <input class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50" id="email" placeholder="Masukkan email Anda" type="email" />
+                                    </div>
+                                    <div>
+                                        <label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" for="message">Pesan</label>
+                                        <textarea class="flex w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 min-h-[100px]" id="message" placeholder="Masukkan pesan Anda"></textarea>
+                                    </div>
+                                    <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-blue-500 text-white hover:bg-blue-600 h-10 px-4 py-2" type="submit">Kirim Pesan</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
+            <p class="text-xs text-muted-foreground">© 2024 Sunset Cafe. Semua hak dilindungi.</p>
+            <nav class="sm:ml-auto flex gap-4 sm:gap-6">
+                <a class="text-xs hover:underline underline-offset-4" href="#">Syarat Layanan</a>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>

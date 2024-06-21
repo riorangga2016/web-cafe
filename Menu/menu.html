@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunset Cafe</title>
+    <link rel="stylesheet" href="../Menu/style.css" />
+    <!-- Tambahkan link Tailwind CSS di sini -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="flex flex-col min-h-[100vh]">
+      <header class="px-4 lg:px-6 h-14 flex items-center">
+        <a class="flex items-center justify-center" href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="h-6 w-6"
+          >
+            <path d="M10 2v2"></path>
+            <path d="M14 2v2"></path>
+            <path
+              d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"
+            ></path>
+            <path d="M6 2v2"></path>
+          </svg>
+          <span class="sr-only">Sunset Cafe</span>
+        </a>
+        <nav class="ml-auto flex gap-4 sm:gap-6">
+          <a
+            class="text-sm font-semibold hover:underline underline-offset-4"
+            href="../index.html"
+          >
+            Beranda
+          </a>
+          <a
+            class="text-sm font-semibold hover:underline underline-offset-4"
+            href="../Tentang/tentang.html"
+          >
+            Tentang
+          </a>
+          <a
+            class="text-sm font-semibold hover:underline underline-offset-4 underline"
+            href="../Menu/menu.html"
+          >
+            Menu
+          </a>
+          <a
+            class="text-sm font-semibold hover:underline underline-offset-4"
+            href="../contact/kontak.html"
+          >
+            Kontak
+          </a>
+        </nav>
+      </header>
+      <main class="flex-1">
+        <section class="w-full pt-12 md:pt-24 lg:pt-32">
+          <div class="container mx-auto space-y-10 xl:space-y-16">
+            <div class="grid gap-4 px-10 md:grid-cols-2 md:gap-16">
+              <div>
+                <h1
+                  class="lg:leading-tighter text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-[3.4rem] 2xl:text-[3.75rem]"
+                >
+                  Menu Sunset Cafe
+                </h1>
+              </div>
+              <div class="flex flex-col items-start space-y-4">
+                <p
+                  class="mx-auto max-w-[700px] text-muted-foreground md:text-xl"
+                >
+                  Jelajahi berbagai pilihan menu lezat kami, yang dibuat dengan
+                  bahan-bahan segar dan dipadukan dengan rasa musiman.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="w-full py-12 md:py-24 lg:py-32">
+          <div class="container mx-auto space-y-12 px-4 md:px-6">
+            <div
+              class="flex flex-col items-center justify-center space-y-4 text-center"
+            >
+              <div class="space-y-2">
+                <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  Sarapan
+                </h2>
+                <p
+                  class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
+                >
+                  Mulailah hari Anda dengan pilihan sarapan lezat kami, yang
+                  sempurna untuk mengisi energi pagi Anda.
+                </p>
+              </div>
+            </div>
+            <div
+              class="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12"
+            >
+              <img
+                src="../Gambar/Beef Burritos.jpeg"
+                alt="Sarapan Sunset Cafe"
+                class="small-img mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
+              />
+
+              <div class="flex flex-col justify-center space-y-4">
+                <ul class="grid gap-6">
+                  <li>
+                    <div class="grid gap-1">
+                      <h3 class="text-xl font-bold">Burrito Sarapan Sunrise</h3>
+                      <p class="text-muted-foreground">
+                        Burrito yang lezat berisi telur orak-arik, bacon,
+                        kentang, dan keju cheddar.
+                      </p>
+                      <div class="font-semibold">$9.99</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="grid gap-1">
+                      <h3 class="text-xl font-bold">Pancake Sunset</h3>
+                      <p class="text-muted-foreground">
+                        Pancake yang lembut disajikan dengan sirup maple dan
+                        pilihan topping Anda.
+                      </p>
+                      <div class="font-semibold">$7.99</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="grid gap-1">
+                      <h3 class="text-xl font-bold">Roti Panggang Alpukat</h3>
+                      <p class="text-muted-foreground">
+                        Roti sourdough yang renyah ditaburi dengan alpukat
+                        tumbuk, tomat ceri, dan sedikit minyak zaitun.
+                      </p>
+                      <div class="font-semibold">$8.99</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="w-full py-12 md:py-24 lg:py-32">
+          <div class="container mx-auto space-y-12 px-4 md:px-6">
+            <div
+              class="flex flex-col items-center justify-center space-y-4 text-center"
+            >
+              <div class="space-y-2">
+                <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  Makan Siang
+                </h2>
+                <p
+                  class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
+                >
+                  Nikmati hidangan makan siang lezat kami, sempurna untuk
+                  istirahat di tengah hari.
+                </p>
+              </div>
+            </div>
+            <div
+              class="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12"
+            >
+              <img
+                src="../Gambar/Spinach Quiche [60 Minutes].jpeg"
+                width="400"
+                height="225"
+                alt="Makan Siang Sunset Cafe"
+                class="small-img mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
+              />
+              <div class="flex flex-col justify-center space-y-4">
+                <ul class="grid gap-6">
+                  <li>
+                    <div class="grid gap-1">
+                      <h3 class="text-xl font-bold">Salad Sunset</h3>
+                      <p class="text-muted-foreground">
+                        Salad segar yang terdiri dari campuran sayuran hijau,
+                        sayuran panggang, dan vinaigrette jeruk yang segar.
+                      </p>
+                      <div class="font-semibold">$11.99</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="grid gap-1">
+                      <h3 class="text-xl font-bold">Sandwich Sunset</h3>
+                      <p class="text-muted-foreground">
+                        Sandwich lezat dengan daging kalkun panggang, alpukat,
+                        tomat, dan pesto aioli di atas roti artisanal.
+                      </p>
+                      <div class="font-semibold">$9.99</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="grid gap-1">
+                      <h3 class="text-xl font-bold">Quiche Sunset</h3>
+                      <p class="text-muted-foreground">
+                        Quiche gurih dengan kulit yang renyah, diisi dengan
+                        sayuran musiman dan campuran keju.
+                      </p>
+                      <div class="font-semibold">$10.99</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="w-full py-12 md:py-24 lg:py-32">
+          <div class="container mx-auto space-y-12 px-4 md:px-6">
+            <div
+              class="flex flex-col items-center justify-center space-y-4 text-center"
+            >
+              <div class="space-y-2">
+                <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  Minuman
+                </h2>
+                <p
+                  class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
+                >
+                  Nikmati minuman khas kami, dibuat dengan bahan-bahan terbaik
+                  dan dirancang untuk melengkapi cita rasa menu kami.
+                </p>
+              </div>
+            </div>
+            <div
+              class="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12"
+            >
+              <img
+                src="../Gambar/tea.jpeg"
+                width="400"
+                height="225"
+                alt="Minuman Sunset Cafe"
+                class="small-img mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
+              />
+              <div class="flex flex-col justify-center space-y-4">
+                <ul class="grid gap-6">
+                  <li>
+                    <div class="grid gap-1">
+                      <h3 class="text-xl font-bold">Smoothie Sunset</h3>
+                      <p class="text-muted-foreground">
+                        Campuran segar buah tropis dan yogurt, sempurna untuk
+                        camilan sehat.
+                      </p>
+                      <div class="font-semibold">$6.99</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="grid gap-1">
+                      <h3 class="text-xl font-bold">Latte Sunset</h3>
+                      <p class="text-muted-foreground">
+                        Latte yang kaya dan creamy dibuat dengan campuran
+                        espresso khas kami.
+                      </p>
+                      <div class="font-semibold">$4.99</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="grid gap-1">
+                      <h3 class="text-xl font-bold">Teh Sunset</h3>
+                      <p class="text-muted-foreground">
+                        Campuran teh herbal yang menenangkan, sempurna untuk
+                        relaksasi dan penyegaran.
+                      </p>
+                      <div class="font-semibold">$3.99</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="border-t border-t-muted">
+        <div class="container mx-auto flex h-14 items-center justify-center text-sm">
+          &copy; 2023 Sunset Cafe. Hak cipta dilindungi undang-undang.
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
